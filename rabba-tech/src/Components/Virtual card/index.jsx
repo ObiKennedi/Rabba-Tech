@@ -5,18 +5,20 @@ export default function VirtualCard({accountBalance,cardSpecifiaction,cardNumber
     return(
         <div className="virtualcard">
             <div>
+                <div><img src={cardSpecifiaction}/></div>
+                <p>Balance</p>
+                <p>${accountBalance}</p>
+                <p>**** **** **** {cardNumber}</p>
+                <p>{accountName}</p>
+            </div>
+            <div>
                 <div>
-                    <p><img src={cardSpecifiaction}/></p>
-                    <p>Balance</p>
-                    <p>${accountBalance}</p>
-                    <p>**** **** **** {cardNumber}</p>
-                    <p>{accountName}</p>
+                    <img src={require('../../Assets/pngwing.com.png')} alt="" />
                 </div>
-                <div>
-                    <p>{expireDate}</p>
-                    <p><img src={require('../../Assets/pngwing.com.png')} alt="" /></p>
-                </div>
-                <div><img src={require('../../Assets/7971.jpg')} alt="" /></div>
+                <p>{expireDate}</p>
+            </div>
+            <div>
+                <img src={require('../../Assets/7971.jpg')} alt="" />
             </div>
         </div>
     )

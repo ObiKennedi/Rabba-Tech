@@ -1,19 +1,23 @@
 import React from "react";
 import './index.scss'
 
-export default function Name({profilePicture, accountName, notificationNumber}){
+export default function Name({profilePicture, accountName}){
     return(
         <div className="name">
             <div>
-                <img src={profilePicture}/>
+                <div>
+                    <img src={profilePicture}/>
+                </div>
+                <div>
+                    <div>{accountName}</div>
+                    <div>Welcome back 👋</div>
+                </div>
             </div>
             <div>
-                <p>{accountName}</p>
-                <h3>Welcome back 👋</h3>
-            </div>
-            <div>
-                <img src={require('../../Assets/notifiication.png')}/>
-                <small>{notificationNumber}</small>
+                <div>
+                    <img src={require('../../Assets/notifiication.png')}/>
+                </div>
+                <div>.</div>
             </div>
         </div>
     )

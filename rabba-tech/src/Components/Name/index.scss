@@ -4,7 +4,7 @@
     >div:first-child{
         display: flex;
         height: 100px;
-        gap: 10px;
+        gap: 20px;
         >div:first-child{
             width: 50px;
             height: 50px;
@@ -46,12 +46,12 @@
         >div:last-child{
             position: absolute;
             background: #FF0000;
-            width: 5px;
-            height: 5px;
+            width: 3px;
+            height: 3px;
             color: #FF0000;
-            padding: 5px;
+            padding: 3px;
             border-radius: 100%;
-            right: 20px;
+            right: 24px;
             bottom: 27px;
         }
     }
